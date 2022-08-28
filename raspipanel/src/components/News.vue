@@ -3,12 +3,12 @@
         <v-btn href="/">Back</v-btn>
         <div class="grid grid-flow-row grid-cols-3 gap-4">
             <div v-for="article in results.articles" :key="article" class="p-3">
-                <img v-on:click="goto(article.url)" :src="article.urlToImage"/>
+                <img class="h-96" v-on:click="goto(article.url)" :src="article.urlToImage"/>
                 <a class="font-bold" :href="article.url">{{ article.title }}</a>
                 <p class="pt-2">&nbsp;&nbsp;&nbsp;&nbsp;{{article.content}}</p>
             </div>
         </div>
-        <img src="https://i.kym-cdn.com/photos/images/original/002/237/978/0d1.jpg" />
+        <img class="h-[300px]" src="https://i.kym-cdn.com/photos/images/original/002/237/978/0d1.jpg" />
 
 
     </div>

@@ -48,6 +48,14 @@
                 </div>
                 
             </div>
+            <div class="flex flex-col">
+                <div>
+                    <v-btn href="/">
+                    Back
+                    </v-btn>
+                </div>
+                
+            </div>
 
         </div>
 

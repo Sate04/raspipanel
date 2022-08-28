@@ -5,6 +5,7 @@ import vuetify from "./plugins/vuetify";
 import News from "./components/News.vue";
 import Crypto from "./components/Crypto.vue";
 import Calendar from "./components/Calendar.vue";
+import Embed from "v-video-embed";
 import "./main.css";
 
 Vue.config.productionTip = false;
@@ -34,3 +35,4 @@ new Vue({
 		return h(this.ViewComponent);
 	},
 });
+Vue.use(Embed);
