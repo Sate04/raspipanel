@@ -34,11 +34,11 @@ export default {
   }),
 //BTC,ETH,BNB,ADA,XRP,DOGE,DOT,UNI,BCH,LTC,LINK,USDT
     mounted() {
-        this.upDate();
+        this.update();
         this.timer = setInterval(this.upDate, 1000);
     },
     methods: {
-        upDate: function () {
+        update: function () {
             this.url = `https://min-api.cryptocompare.com/data/pricemulti?fsyms=${this.CryptocurrencyList}&tsyms=${this.CoinsList}`
             axios
         .get(

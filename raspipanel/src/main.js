@@ -4,6 +4,7 @@ import Sports from "./components/Sports.vue";
 import vuetify from "./plugins/vuetify";
 import News from "./components/News.vue";
 import Crypto from "./components/Crypto.vue";
+import Calendar from "./components/Calendar.vue";
 import "./main.css";
 
 Vue.config.productionTip = false;
@@ -15,6 +16,7 @@ const routes = {
 	"/sports": Sports,
 	"/news": News,
 	"/crypto": Crypto,
+	"/calendar": Calendar,
 };
 
 new Vue({

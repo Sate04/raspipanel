@@ -28,6 +28,16 @@
       </v-btn >
 
     </div>
+
+    <div>
+      <v-btn class="w-36 text-black"
+      elevation="2"
+      href="/calendar"
+      >
+      Calendar
+      </v-btn >
+
+    </div>
   </div>
 </template>
 
@@ -40,9 +50,6 @@ export default {
     //
   }),
   methods: {
-    gotoSports() {
-      this.window.location.href="/sports";
-    }
   },
 };
 </script>
