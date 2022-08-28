@@ -1,6 +1,6 @@
 <template>
     <div>
-
+        <v-btn href="/">Back</v-btn>
         <img src="https://media.discordapp.net/attachments/695492099419930675/1003084215904129124/unknown.png" />
     
     </div>

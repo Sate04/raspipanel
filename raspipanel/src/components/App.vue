@@ -1,28 +1,32 @@
 <template>
   <div class="pt-10 px-10 flex flex-row justify-between">
     <div>
-      <v-btn class="w-24 text-black"
+      <v-btn class="w-36 text-black"
       elevation="2"
-      v-on:click=goto(sports)>
-      
+      href="/sports"
+      >
       Sports
+      
       </v-btn >
     </div>
 
     <div>
-      <v-btn class="w-24 text-black"
+      <v-btn class="w-36 text-black"
       elevation="2"
+      href="/news"
       >
       News
       </v-btn >
     </div>
 
     <div>
-      <v-btn class="w-24 text-black"
+      <v-btn class="w-36 text-black"
       elevation="2"
+      href="/crypto"
       >
-      Bitcoin
+      Cryptocurrency
       </v-btn >
+
     </div>
   </div>
 </template>
@@ -36,8 +40,8 @@ export default {
     //
   }),
   methods: {
-    goto(route) {
-      this.window.href=route;
+    gotoSports() {
+      this.window.location.href="/sports";
     }
   },
 };
