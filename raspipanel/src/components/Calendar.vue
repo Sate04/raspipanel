@@ -13,6 +13,8 @@
 </template>
 
 <script>
+import firebase from '../firebase.js'
+const db = firebase.firestore();
 
   export default {
     data: () => ({
@@ -28,13 +30,27 @@
         { text: 'Mon, Wed, Fri', value: [1, 3, 5] },
       ],
       value: '',
-      events: [],
+      events: [{
+        name: 'Test',
+        start: '2022-08-01',
+        end: '2022-08-03',
+        color: '#ff0000',
+      }],
 
     }),
     methods: {
 
     },
     setup() {
+
+    },
+    mounted(){
+        db.collection("events").get().then((querySnapshot) => {
+            querySnapshot.forEach((doc) => {
+                this.events.push(doc.data());
+            });
+        });
     }
-  }
+    
+}
 </script>
