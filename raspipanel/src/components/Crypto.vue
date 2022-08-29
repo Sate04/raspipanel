@@ -35,7 +35,7 @@ export default {
 //BTC,ETH,BNB,ADA,XRP,DOGE,DOT,UNI,BCH,LTC,LINK,USDT
     mounted() {
         this.update();
-        this.timer = setInterval(this.upDate, 1000);
+        this.timer = setInterval(this.update, 1000);
     },
     methods: {
         update: function () {
